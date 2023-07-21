@@ -18,14 +18,8 @@ Use npm install to install the required dependencies specified in the package.js
 
 Configure the Environment
 
-3. Install cypress by following the code below
-  npm init
-  npm install cypress — save-dev
-  npm install @badeball/cypress-cucumber-preprocessor
-  npm install @cypress/browserify-preprocessor
-
- 4. Execute Script
+3. Execute Script
 In the command line type “npx cypress open” .Cypress Runner will open. 
 Select E2E testing then choose browser. A spec dashboard will open 
-containing all the feature files listed. Select the desired feature file and that test will start executing.
+containing all the feature files listed. Select the feature file and that test will start executing.
   
