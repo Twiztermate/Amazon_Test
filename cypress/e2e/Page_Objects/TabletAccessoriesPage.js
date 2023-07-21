@@ -17,7 +17,7 @@ export default class TabletAccessoriesPage {
         items.each((index, item) => {
           const priceElement = Cypress.$(item).find('.a-price-whole');
           const priceText = priceElement.text().trim();
-          const price = parseFloat(priceText.replace('$', '')); // Assuming price is in the format $X.XX
+          const price = parseFloat(priceText.replace('$', ''));
   
           if (price < lowestPrice) {
             lowestPrice = price;
@@ -30,7 +30,6 @@ export default class TabletAccessoriesPage {
           cy.get('.a-price-whole').eq(lowestPriceIndex).cy.get('.open-new-window-button').click();
         } else {
           // Handle the case where no item was found
-          // You may want to throw an error or take appropriate action here
           cy.log('No item found.');
         }
       });

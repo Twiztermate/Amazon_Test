@@ -11,6 +11,5 @@ Feature: Sort Tablet Accessories by Brand on Amazon
     When I check the JETech brand
     When I filter JETech results with the Newest Arrivals
     When I find the lowest priced item
-    When I switch the window
-    Then I should see the "About this item" section
-    And I log the "About this item" section to the console
+    Then I should see the About this item section
+    Then I log the About this item section to the console

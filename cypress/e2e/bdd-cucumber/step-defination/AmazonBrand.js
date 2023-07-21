@@ -4,6 +4,8 @@ import HamburgerMenuPage from "../../Page_Objects/HamburgerMenuPage";
 import ComputersPage from "../../Page_Objects/ComputersPage";
 import TabletAccessoriesPage from "../../Page_Objects/TabletAccessoriesPage";
 import SwitchWindow from "../../Page_Objects/switchwindow";
+import LogItemToConsole from "../../Page_Objects/LogItemToConsole";
+
 
 
 
@@ -43,8 +45,14 @@ When('I find the lowest priced item', () => {
       
      //switch a new window
 const switchwindow = new SwitchWindow
- 
-Then("I should see the 'About this item' section",  ()=>{
+Then("I should see the About this item section",  ()=>{
 switchwindow.AboutThisItem();
 
 })
+
+//log item in console
+const jtechitem = new LogItemToConsole
+Then("And I log the About this item section to the console", ()=>{
+jtechitem.LogJETechItem();
+})
+
