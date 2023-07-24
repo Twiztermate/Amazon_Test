@@ -6,15 +6,14 @@ So that a user can find and verify specific products
 **To Install or use file, Perform the steps below
 1. Clone the Repository:*
 
-Go to the GitHub repository that contains the Cypress/BDD/POM framework.
-Click on the "Code" button and copy the repository URL.
+Click on the "Code" button and copy this repository URL.
 Open your terminal (Command Prompt, Git Bash, or any other terminal you prefer) and navigate to the folder where you want to clone the repository.
 Use the git clone command followed by the repository URL to clone the repository to your local machine.
 
 2. Install Dependencies:
 
 Navigate into the cloned repository folder using cd repository (replace repository with the actual folder name).
-Use npm install to install the required dependencies specified in the package.json file.
+Use 'npm install' to install the required dependencies specified in the package.json file.
 
 Configure the Environment
 
